@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-color: EE3EEEFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ItemFormController">
+    <children>
+        <Text fill="#2e0232" layoutX="385.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Form">
+            <font>
+                <Font name="Dyuthi Regular" size="96.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Text>
+        <TextField fx:id="txtItemId" layoutX="160.0" layoutY="219.0" onAction="#txtSearchItemOnAction" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtItemName" layoutX="669.0" layoutY="219.0" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtUnitPrice" layoutX="160.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtQTY" layoutX="669.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+        <Text layoutX="160.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id" />
+        <Text layoutX="669.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <Text layoutX="160.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Price" />
+        <Text layoutX="671.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY" />
+        <JFXButton buttonType="RAISED" layoutX="240.0" layoutY="437.0" onAction="#btnSaveOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Save" textFill="#fffefe" />
+        <JFXButton buttonType="RAISED" layoutX="474.0" layoutY="437.0" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Update" textFill="#fffefe" />
+        <JFXButton buttonType="RAISED" layoutX="686.0" layoutY="437.0" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Delete" textFill="#fffbfb" />
+        <TableView fx:id="tblItem" layoutX="146.0" layoutY="569.0" prefHeight="200.0" prefWidth="788.0">
+            <columns>
+                <TableColumn fx:id="tblItemId" prefWidth="133.0" text="Item ID" />
+                <TableColumn fx:id="tblName" prefWidth="218.0" text="Name" />
+                <TableColumn fx:id="tblUnitPrice" prefWidth="225.0" text="Unit Price" />
+                <TableColumn fx:id="tblQty" prefWidth="211.0" text="QTY" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="798.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Back" textFill="#fffbfb" />
+    </children>
+</AnchorPane>

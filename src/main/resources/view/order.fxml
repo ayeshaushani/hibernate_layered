@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="890.0" prefWidth="1080.0" style="-fx-background-color: EE3EEEFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.OrderFormController">
+    <children>
+        <Text fill="#2e0232" layoutX="296.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Form">
+            <font>
+                <Font name="Dyuthi Regular" size="96.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Text>
+        <TextField fx:id="txtCustomerId" layoutX="160.0" layoutY="219.0" onAction="#txtSearchCustomerOnAction" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtName" layoutX="669.0" layoutY="219.0" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtEmail" layoutX="160.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+        <TextField fx:id="txtPhoneNumber" layoutX="669.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+        <Text layoutX="160.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id" />
+        <Text layoutX="669.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <Text layoutX="160.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+        <Text layoutX="671.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+        <JFXButton buttonType="RAISED" layoutX="240.0" layoutY="437.0" onAction="#btnSaveOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Save" textFill="#fcfafa" />
+        <JFXButton buttonType="RAISED" layoutX="686.0" layoutY="437.0" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Delete" textFill="#fffdfd" />
+        <TableView fx:id="tblCustomer" layoutX="146.0" layoutY="569.0" prefHeight="200.0" prefWidth="788.0">
+            <columns>
+                <TableColumn fx:id="tblCustomerId" prefWidth="133.0" text="Customer ID" />
+                <TableColumn fx:id="tblName" prefWidth="218.0" text="Name" />
+                <TableColumn fx:id="tblEmail" prefWidth="225.0" text="Email" />
+                <TableColumn fx:id="tblPhoneNumber" prefWidth="211.0" text="Phone Number" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="883.0" layoutY="811.0" onAction="btnBackOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Back" textFill="#fcf8f8" />
+      <AnchorPane fx:id="root1" prefHeight="900.0" prefWidth="1090.0" style="-fx-background-color: EE3EEEFF;">
+         <children>
+            <Text fill="#2e0232" layoutX="296.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Form">
+               <font>
+                  <Font name="Dyuthi Regular" size="96.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <TextField fx:id="txtCustomerId1" layoutX="160.0" layoutY="219.0" onAction="#txtSearchCustomerOnAction" prefHeight="29.0" prefWidth="251.0" />
+            <TextField fx:id="txtName1" layoutX="669.0" layoutY="219.0" prefHeight="29.0" prefWidth="251.0" />
+            <TextField fx:id="txtEmail1" layoutX="160.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+            <TextField fx:id="txtPhoneNumber1" layoutX="669.0" layoutY="333.0" prefHeight="29.0" prefWidth="251.0" />
+            <Text layoutX="160.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id" />
+            <Text layoutX="669.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="160.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <Text layoutX="671.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+            <JFXButton buttonType="RAISED" layoutX="240.0" layoutY="437.0" onAction="#btnSaveOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Save" textFill="#fcfafa" />
+            <JFXButton buttonType="RAISED" layoutX="686.0" layoutY="437.0" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Delete" textFill="#fffdfd" />
+            <TableView fx:id="tblCustomer1" layoutX="146.0" layoutY="569.0" prefHeight="200.0" prefWidth="788.0">
+               <columns>
+                  <TableColumn fx:id="tblCustomerId1" prefWidth="133.0" text="Customer ID" />
+                  <TableColumn fx:id="tblName1" prefWidth="218.0" text="Name" />
+                  <TableColumn fx:id="tblEmail1" prefWidth="225.0" text="Email" />
+                  <TableColumn fx:id="tblPhoneNumber1" prefWidth="211.0" text="Phone Number" />
+               </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="475.0" layoutY="437.0" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Update" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="888.0" layoutY="815.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #2a0359;" text="Back" textFill="#f8f5f5" />
+    </children>
+</AnchorPane>
